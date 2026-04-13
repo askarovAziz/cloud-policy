@@ -2646,3 +2646,135 @@ body.dark-mode .disclaimer-hero {
 body.dark-mode .disclaimer-item {
   background: rgba(255, 255, 255, 0.05);
 }
+
+/* Cancellation & refund page layout */
+.cancellation-page {
+  background: #f3f3f3;
+}
+
+.cancellation-hero {
+  padding: 5.5rem 0 13.5rem;
+  background: radial-gradient(circle at 20% 22%, rgba(71, 102, 58, 0.8), rgba(71, 102, 58, 0) 52%),
+    radial-gradient(circle at 86% 16%, rgba(128, 106, 54, 0.7), rgba(128, 106, 54, 0) 56%),
+    linear-gradient(135deg, #253120 0%, #423a22 58%, #56472a 100%);
+}
+
+.cancellation-hero-content {
+  text-align: center;
+  color: #fff;
+}
+
+.cancellation-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 1.35rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.cancellation-home-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.cancellation-hero h1 {
+  color: #fff;
+  margin: 0;
+  font-size: clamp(2.1rem, 4.5vw, 3.3rem);
+}
+
+.cancellation-main {
+  margin-top: -9.2rem;
+  padding-bottom: 2.5rem;
+}
+
+.cancellation-shell {
+  max-width: 980px;
+}
+
+.cancellation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.cancellation-card {
+  background: #f8f8f8;
+  border-radius: 18px;
+  border: 1px solid #dfd4c3;
+  padding: 1.25rem 1.1rem;
+  box-shadow: none;
+  min-height: 254px;
+}
+
+.cancellation-card h2 {
+  font-size: 2.6rem;
+  line-height: 1;
+  margin-bottom: 0.65rem;
+  color: #1e253b;
+}
+
+.cancellation-card p,
+.cancellation-card li {
+  font-size: 1rem;
+  color: #343b4f;
+}
+
+.cancellation-card ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.cancellation-note {
+  text-align: center;
+  margin: 0.8rem auto 0;
+  max-width: 760px;
+  color: #263149;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1100px) {
+  .cancellation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .cancellation-hero {
+    padding: 4.2rem 0 11rem;
+  }
+
+  .cancellation-main {
+    margin-top: -7.8rem;
+  }
+
+  .cancellation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cancellation-card h2 {
+    font-size: 2.1rem;
+  }
+}
+
+body.dark-mode.cancellation-page {
+  background: #161b1a;
+}
+
+body.dark-mode .cancellation-card {
+  background: #1e2523;
+  border-color: #4f4d40;
+}
+
+body.dark-mode .cancellation-card h2 {
+  color: #f0f4ff;
+}
+
+body.dark-mode .cancellation-card p,
+body.dark-mode .cancellation-card li,
+body.dark-mode .cancellation-note,
+body.dark-mode .cancellation-home-link {
+  color: rgba(233, 237, 252, 0.86);
+}
