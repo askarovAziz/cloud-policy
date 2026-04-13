@@ -2505,6 +2505,133 @@ body.dark-mode .policy-cta {
   background: linear-gradient(100deg, #1e574f, #6c5530);
 }
 
+/* Terms page refresh */
+.terms-section {
+  padding-top: 0;
+}
+
+.terms-hero {
+  min-height: 430px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 7.8rem;
+  background:
+    radial-gradient(circle at 82% 30%, rgba(129, 108, 54, 0.45), transparent 38%),
+    radial-gradient(circle at 22% 36%, rgba(57, 92, 63, 0.55), transparent 42%),
+    linear-gradient(120deg, #1f3525 0%, #2d4a34 42%, #3f3a23 100%);
+}
+
+.terms-hero-inner {
+  text-align: center;
+  color: #fdf7eb;
+}
+
+.terms-hero-title {
+  font-size: clamp(2.3rem, 5.5vw, 4rem);
+  line-height: 1.12;
+  margin-bottom: 0.8rem;
+}
+
+.terms-hero-text,
+.terms-hero-date {
+  color: rgba(253, 247, 235, 0.92);
+  font-size: 1.15rem;
+}
+
+.terms-hero-date {
+  font-weight: 600;
+}
+
+.terms-shell {
+  margin-top: -1.8rem;
+  padding-bottom: 1.2rem;
+}
+
+.terms-header {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 2.1rem;
+}
+
+.terms-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.48rem 0.95rem;
+  background: #dfe7df;
+  color: #16514f;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-size: 0.72rem;
+  margin-bottom: 1rem;
+}
+
+.terms-title {
+  margin-bottom: 0.8rem;
+}
+
+.terms-intro {
+  margin: 0 auto;
+  max-width: 740px;
+}
+
+.terms-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.terms-card {
+  min-height: 230px;
+  box-shadow: 0 12px 28px rgba(35, 37, 31, 0.07);
+}
+
+.terms-card h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.65rem;
+  font-size: 2rem;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+
+.terms-card p {
+  margin: 0;
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+@media (max-width: 1120px) {
+  .terms-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .terms-hero {
+    min-height: 360px;
+    padding-top: 6.8rem;
+  }
+
+  .terms-hero-text,
+  .terms-hero-date {
+    font-size: 1rem;
+  }
+
+  .terms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .terms-card {
+    min-height: auto;
+  }
+
+  .terms-card h3 {
+    font-size: 1.75rem;
+  }
+}
+
 /* Disclaimer page layout */
 .disclaimer-page {
   background: #f5f5f5;
