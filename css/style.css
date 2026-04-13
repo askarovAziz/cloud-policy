@@ -2504,3 +2504,145 @@ body.dark-mode .policy-badge {
 body.dark-mode .policy-cta {
   background: linear-gradient(100deg, #1e574f, #6c5530);
 }
+
+/* Disclaimer page layout */
+.disclaimer-page {
+  background: #f5f5f5;
+}
+
+.disclaimer-hero {
+  padding: 6rem 0 11rem;
+  background: radial-gradient(circle at 20% 25%, rgba(54, 91, 60, 0.85), rgba(54, 91, 60, 0) 55%),
+    radial-gradient(circle at 86% 20%, rgba(112, 92, 45, 0.72), rgba(112, 92, 45, 0) 55%),
+    linear-gradient(135deg, #212d20 0%, #443920 55%, #5b4a2a 100%);
+}
+
+.disclaimer-hero-content {
+  text-align: center;
+  color: #fff;
+}
+
+.disclaimer-home-link {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 3rem;
+}
+
+.disclaimer-home-link:hover {
+  color: #fff;
+}
+
+.disclaimer-title {
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+
+.disclaimer-subtitle,
+.disclaimer-date {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.2rem;
+}
+
+.disclaimer-content-section {
+  padding-top: 0;
+  margin-top: -5.5rem;
+}
+
+.disclaimer-shell {
+  max-width: 1180px;
+}
+
+.disclaimer-nav {
+  justify-content: center;
+  margin-bottom: 2.2rem;
+}
+
+.disclaimer-header {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 2.25rem;
+}
+
+.disclaimer-header h2 {
+  color: var(--color-primary);
+  margin-bottom: 0.65rem;
+  font-size: 3rem;
+}
+
+.disclaimer-header p {
+  color: var(--color-text-light);
+  font-size: 1.08rem;
+}
+
+.disclaimer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.disclaimer-item {
+  min-height: 310px;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.disclaimer-item h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.65rem;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.disclaimer-item p {
+  color: var(--color-text-light);
+}
+
+.disclaimer-footer-note {
+  text-align: center;
+  max-width: 780px;
+  margin: 1.8rem auto 0;
+  color: var(--color-text-light);
+}
+
+@media (max-width: 1100px) {
+  .disclaimer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .disclaimer-hero {
+    padding: 5.2rem 0 9rem;
+  }
+
+  .disclaimer-subtitle,
+  .disclaimer-date {
+    font-size: 1rem;
+  }
+
+  .disclaimer-header h2 {
+    font-size: 2.1rem;
+  }
+
+  .disclaimer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .disclaimer-item h3 {
+    font-size: 1.5rem;
+  }
+}
+
+body.dark-mode.disclaimer-page {
+  background: #151915;
+}
+
+body.dark-mode .disclaimer-hero {
+  background: radial-gradient(circle at 20% 25%, rgba(56, 89, 63, 0.85), rgba(56, 89, 63, 0) 55%),
+    radial-gradient(circle at 86% 20%, rgba(96, 78, 37, 0.7), rgba(96, 78, 37, 0) 55%),
+    linear-gradient(135deg, #151d15 0%, #2f291b 60%, #453620 100%);
+}
+
+body.dark-mode .disclaimer-item {
+  background: rgba(255, 255, 255, 0.05);
+}
